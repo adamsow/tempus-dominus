@@ -4171,10 +4171,10 @@ class Actions {
             }
             case 1: {
                 const other = this.dates.picked[0];
-                if (day.getTime() === other.getTime()) {
-                    this.dates.clear();
-                    break;
-                }
+                // if (day.getTime() === other.getTime()) {
+                //   this.dates.clear();
+                //   break;
+                // }
                 if (day.isBefore(other)) {
                     this.dates.setValue(day, 0);
                     this.dates.setValue(other, 1);
